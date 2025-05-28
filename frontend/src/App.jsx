@@ -12,7 +12,8 @@ import About from './Pages/About';
 import Service from './Pages/Service';
 import ContactUs from './Pages/ContactUs';
 import Login from './Pages/Login';
-import Cards from './Components/Cards';
+
+import Signup from './Pages/Signup';
 
 const AppContent = () => {
   const location = useLocation();
@@ -33,6 +34,8 @@ const AppContent = () => {
         <Route path="/service" element={<Service />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path='/login' element={<Login></Login>}></Route>
+        <Route path="/signup" element={<Signup />} />
+    
       </Routes>
 
       <Footer />
